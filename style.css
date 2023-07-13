@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins';
+}
+:root{
+    --text-color : #000;
+    --bg-color:#e9e9e9;
+    --main-color:#286EFC;
+    --second-color:#fff;
+    --other-color: #868686;
+    --big-font : 4.5rem;
+    --p-font: 1rem;
+    --transition : all 0.5s;
+
+  }
+header{
+   display: flex;
+   padding: 1.1rem 2rem;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid var(--bg-color);
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.menu-btn{
+    display: block;
+    margin-right: 1rem;
+    font-size: 2em;
+    margin-top: 0.5rem;
+}
+
+nav{
+    margin-left: auto;
+    margin-right: 2rem;
+    display: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;  
+}
+nav ul li{
+    margin: 1rem 1.3rem;
+    font-size: .9em;
+}
+nav ul li a{
+    font-weight: 400;
+}
+nav ul li a:hover{
+    color:var(--main-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.call-btn{
+    color : var(--second-color);
+    width:1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.call-btn:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+@media (min-width: 1050px) {
+    .menu-btn{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+  }
+
+@media (min-width: 1200px) {
+    header{
+        padding: .8rem 5rem;
+     }
+  }

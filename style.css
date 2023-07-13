@@ -12,9 +12,24 @@
     --other-color: #868686;
     --big-font : 4.5rem;
     --p-font: 1rem;
-    --transition : all 0.5s;
+    --transition : all 0.3s;
 
   }
+  h1{
+    font-size: 2em;
+    margin-top: 0.3rem;
+    letter-spacing: 0.1rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  h2{
+    font-size: 1.5em; 
+     letter-spacing: 0.1rem;
+     font-weight: 200;
+     margin-block-start: 0em;
+  }
+
 header{
    display: flex;
    padding: 1.1rem 2rem;
@@ -71,17 +86,157 @@ nav ul li a:hover{
     transition: all 0.5s;
 }
 
+.slide{
+    max-width: 100%;
+    position: relative;
+}
+.slide img{
+   object-fit: cover;
+   object-position: right;
+   max-width: 100%;
+   min-height: 30rem;
+
+}
+.slide-info{
+    position: absolute;
+    top : 2rem;
+    left:2rem;
+    color: var(--second-color);
+}
+
+.slide-info span{
+    font-size: 1.5em; color: yellow; letter-spacing: 0.1rem;
+}
+.slide-info p{
+    letter-spacing: 0.1rem;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 95%;
+    line-height: 2.5rem;
+    color: #cfcfcf;
+    margin-top: 1.5rem;
+
+}
+
+button{
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border: 1px solid var(--main-color);
+    font: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 4rem;
+    outline: none;
+    font-weight: 600;
+    transition: var(--transition);
+    margin: 6px 0;
+    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+}
+button:hover{
+    background-color: #4382ff;
+    border: 1px solid #4382ff;
+}
+.arrows{
+    font-size: 2.5em;
+    margin-top: 0.5rem;
+}
+.arrows .bx{
+    margin: -0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.arrows .bx:hover{
+    color: var(--main-color);
+}
+.wave{
+    margin-top: -15rem;
+    width :100%;
+     height : 15rem;
+}
+
+
+
+@media (min-width: 600px) {
+   
+    h1{
+        font-size: 2em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+      }
+    
+      h2{
+        font-size: 1.5em; 
+         font-weight: 200;
+         margin-block-start: 0em;
+      }
+      .arrows{
+        font-size: 3.5em;
+        margin-top: 1.5rem;
+    }
+}
+@media (min-width: 800px) {
+    .slide-info{
+        top : 3rem;
+        left:3rem;
+    }
+    h1{
+        font-size: 2.5em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+      }
+    
+      h2{
+        font-size: 2em; 
+         font-weight: 200;
+         margin-block-start: 0em;
+      }
+   
+}
+
 @media (min-width: 1050px) {
+    .slide-info{
+        top : 7rem;
+        left: 7rem;
+    }
     .menu-btn{
         display: none;
     }
     nav{
         display: block;
     }
+   
+      h1{
+        font-size: 3.5em;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+      }
+    
+      h2{
+        font-size: 2.5em; 
+         font-weight: 200;
+         margin-block-start: 0em;
+      }
+    .slide-info p{
+        width: 55%;
+    }
+
   }
 
 @media (min-width: 1200px) {
     header{
         padding: .8rem 5rem;
      }
+  }
+
+  
+@media (min-width: 1300px) {
+ 
+     .wave{
+        height : 25rem;
+        margin-top: -22rem;
+
+   }
   }

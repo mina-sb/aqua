@@ -157,6 +157,21 @@ button:hover{
     background-color: #4382ff;
     border: 1px solid #4382ff;
 }
+
+.glass-btn{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 6px;
+    padding: .8rem 2.3rem;
+    margin-top: 1.8rem;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.glass-btn:hover{
+    background-color: #4382ff;
+    border: none;
+
+}
 .arrows{
     font-size: 2.5em;
     margin-top: 0.5rem;
@@ -238,9 +253,28 @@ button:hover{
 {
     line-height: 1.8rem;
     letter-spacing: normal;
-
-font-size: 0.8em;
+    font-size: 0.8em;
 }
+.landscape{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(./images/waterfall.jpg);
+    display: flex;
+    justify-content: end;
+}
+.landscape div{
+    width: 100%;
+    padding: 3rem; 
+}
+.landscape div h3{
+color: var(--second-color);
+font-weight: 900;
+}
+.landscape div p{
+    color: var(--second-color);
+    letter-spacing: normal;
+    opacity: .8;
+    line-height: 1.4rem;
+    }
 
 
 @media (min-width: 600px) {
@@ -276,8 +310,9 @@ font-size: 0.8em;
     .attribute div{
         margin-left: 1rem;
     }
-
-
+    .landscape div{
+        width: 70%;
+        padding: 3rem;     }
 }
 @media (min-width: 800px) {
     .slide-info{
@@ -302,7 +337,9 @@ font-size: 0.8em;
         padding: 4rem 4rem;
     }
    
-   
+    .landscape div{
+        width: 40%;
+        padding: 5rem;     }
 }
 
 @media (min-width: 1050px) {

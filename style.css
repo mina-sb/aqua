@@ -36,6 +36,7 @@
      margin-block-start: 0em;
      color: var(--text-color);
   }
+
   p{
     letter-spacing: 0.1rem;
         color: var(--other-color);
@@ -277,6 +278,109 @@ font-weight: 900;
     }
 
 
+    .products{
+        text-align: center;
+        padding: 3rem 6rem 4rem;
+    }
+    .products h4{
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.product{
+    flex:0 0 100%;
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    margin-right: 4rem;
+
+}
+.product:hover .product-img span.big-bulb{
+    transform:scale(1.2);
+    transition: all 1s;
+}
+.product-img{
+    flex: 0 0 35%;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.product-img span.big-bulb{
+    position: absolute;
+    top: 2.2rem;
+    left: .6rem;
+    z-index: -10;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    margin: auto;
+}
+
+.product-img span.small-bulb{
+    position: absolute;
+    top: 1rem;
+    left: 9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    margin: auto;
+}
+.product-info{
+    flex: 0 0 65%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+}
+.product-info h5{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.product-info h5:hover{
+    color: var(--main-color);
+}
+.product-info h6{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.product-info span i{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 0.4;
+}
+.product-info span {
+    margin-top: 0.5rem;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: var(--text-color);
+    opacity: 0.4;
+}
+.product-info p{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: var(--text-color);
+    letter-spacing: 0.05rem;
+    opacity: 0.6;
+    line-height: 1.5rem;
+
+}
+.produtcs-btn{
+    margin-top: 5rem;
+}
 @media (min-width: 600px) {
    
     h1{
@@ -340,6 +444,18 @@ font-weight: 900;
     .landscape div{
         width: 40%;
         padding: 5rem;     }
+        .products{
+            padding: 3rem 3rem;
+        }
+        .product-container{
+            display: flex;
+            justify-content: row;
+        }
+        .product{
+            flex:0 0 45%;}
+            .product-container{
+                flex-direction: row;
+            }
 }
 
 @media (min-width: 1050px) {
@@ -385,7 +501,9 @@ font-weight: 900;
     .attribute{
         flex : 0 0 33%;
     }
- 
+    .products{
+        padding: 3rem 6rem;
+    }
   }
 
 @media (min-width: 1200px) {

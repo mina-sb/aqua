@@ -158,6 +158,20 @@ button:hover{
     background-color: #4382ff;
     border: 1px solid #4382ff;
 }
+.send-btn{
+    background-color: var(--main-color);
+    font: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-weight: 500;
+    transition: var(--transition);
+    margin: 6px 0;
+    letter-spacing: 0.1rem;
+}
 
 .glass-btn{
     background-color: rgba(255, 255, 255, 0.2);
@@ -566,6 +580,60 @@ label{
   margin: auto;
   margin-top: 6rem;
 }
+
+.footer{
+    padding: 3rem 4rem;
+    background-color: #e0e6ff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer-column{
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+.footer-column h5{
+    font-size: 1.5rem;
+    opacity: 0.8;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+.footer-column p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+    opacity: 0.7;
+    margin-top: -0.5rem;
+}
+.footer-column  div{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+}
+.footer-column  i{
+color: #000; 
+font-size: 1.2em;   
+}
+.footer-column  span{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+    opacity: 0.6;
+    margin-top: -0.2rem;
+    margin-left: 1rem;
+}
+.footer-column  span:hover{
+    color: var(--main-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+.send-btn i{
+    color: var(--second-color);
+    margin-top: 0.2rem;
+
+}
+
 @media (min-width: 600px) {
    
     h1{
@@ -611,6 +679,27 @@ label{
             flex : 0 0 50%;
             padding: 0 2rem;
         }
+        .footer{
+            padding: 3rem 4rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .footer-column{
+            flex: 1 0 50%;
+        }
+        .about{
+            flex: 1 0 100%;
+
+        }
+        .footer-column  div{
+            flex-direction: column;
+        }
+        .footer-column  div a{
+           width: 100%;
+           text-align: center;
+        }
+       
 }
 @media (min-width: 800px) {
     .slide-info{
@@ -659,7 +748,18 @@ label{
             .testimonials{
                padding: 2.5rem 4rem;
             }
+        
+    
+            .footer-column{
+                flex: 1 0 33%;
+            }
            
+            .footer-column  div{
+                flex-direction: row;
+            }
+            .footer-column  div a{
+                width: auto;
+             }
 }
 
 @media (min-width: 1050px) {

@@ -294,7 +294,7 @@ font-weight: 900;
 
     .products{
         text-align: center;
-        padding: 3rem 6rem;
+        padding: 3rem 3rem;
         margin-bottom: 3rem;
     }
     .products h4{
@@ -317,7 +317,7 @@ font-weight: 900;
     margin-right: 4rem;
 
 }
-.product:hover .product-img span.big-bulb{
+.product:hover .product-img span.big-bubble{
     transform:scale(1.2);
     transition: all 1s;
 }
@@ -327,7 +327,7 @@ font-weight: 900;
     box-sizing: border-box;
     position: relative;
 }
-.product-img span.big-bulb{
+.product-img span.big-bubble{
     position: absolute;
     top: 2.2rem;
     left: .6rem;
@@ -339,7 +339,7 @@ font-weight: 900;
     margin: auto;
 }
 
-.product-img span.small-bulb{
+.product-img span.small-bubble{
     position: absolute;
     top: 1rem;
     left: 9rem;
@@ -455,12 +455,9 @@ font-weight: 900;
 }
 .testimonials{
     text-align: center;
-   padding: 2.5rem 3rem;
+   padding: 4rem 3rem 1rem;
 }
-.testimonials-container{
-    display: flex;
-    flex-direction: column;
-}
+
 .testimonial{
     text-align: left;
     padding: 0 2rem;
@@ -503,11 +500,10 @@ font-weight: 300;
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    padding: 6rem 8rem;
+    padding: 6rem 4rem;
+
 }
-.contact-from{
-    flex: 0 0 50%;
-}
+
 .inputs{
     display: flex;
     flex-direction: row;
@@ -634,6 +630,28 @@ font-size: 1.2em;
 
 }
 
+
+
+.testimonial-container {
+    width: 100%;
+    padding: 0rem 0rem 1rem;
+    box-sizing: border-box;
+  }
+  
+  .swiper-slide {
+    padding: 0px 0 100px;
+  }
+  
+  .swiper .swiper-pagination .swiper-pagination-bullet {
+    box-shadow: none;
+    background: var(--main-color);
+    width: 10px;
+    height: 10px;
+  }
+  
+
+  
+
 @media (min-width: 600px) {
    
     h1{
@@ -699,7 +717,11 @@ font-size: 1.2em;
            width: 100%;
            text-align: center;
         }
-       
+        .testimonial-container {
+            width: 100%;
+            padding: 0rem 3rem 3rem 3rem;
+            box-sizing: border-box;
+          }
 }
 @media (min-width: 800px) {
     .slide-info{
@@ -727,9 +749,7 @@ font-size: 1.2em;
     .landscape div{
         width: 40%;
         padding: 5rem;     }
-        .products{
-            padding: 3rem 3rem;
-        }
+      
         .product-container{
             display: flex;
             justify-content: row;
@@ -742,11 +762,9 @@ font-size: 1.2em;
             .customer-service{
                 padding: 2.5rem 4rem;
              }
-             .testimonials-container{
-                flex-direction: row;
-            }
+           
             .testimonials{
-               padding: 2.5rem 4rem;
+               padding: 5rem 4rem 1rem;
             }
         
     
@@ -760,6 +778,9 @@ font-size: 1.2em;
             .footer-column  div a{
                 width: auto;
              }
+             .card {
+                padding: 0rem 10rem 3rem 10rem;
+              }
 }
 
 @media (min-width: 1050px) {
@@ -843,7 +864,9 @@ font-size: 1.2em;
         padding-left: 6rem;
         padding-top: 4rem;
         overflow: hidden;
-
+    }
+    .contact-from{
+        flex: 0 0 50%;
     }
     
     .contact img{

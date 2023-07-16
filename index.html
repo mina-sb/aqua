@@ -7,6 +7,10 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
   />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
  <header>
@@ -108,8 +112,8 @@
            <div class="product-container">
             <div class="product">
                 <div class="product-img">
-                    <span class="big-bulb"></span>
-                    <span class="small-bulb"></span>
+                    <span class="big-bubble"></span>
+                    <span class="small-bubble"></span>
                                         <img src="./images/product-1.png" />
                 </div>
                 <div class="product-info">
@@ -122,8 +126,8 @@
             </div>
             <div class="product">
                 <div class="product-img">
-                    <span class="big-bulb"></span>
-                    <span class="small-bulb"></span>
+                    <span class="big-bubble"></span>
+                    <span class="small-bubble"></span>
                     <img src="./images/product-2.png" />
                 </div>
                 <div class="product-info">
@@ -138,8 +142,8 @@
            <div class="product-container">
             <div class="product">
                 <div class="product-img">
-                    <span class="big-bulb"></span>
-                    <span class="small-bulb"></span>
+                    <span class="big-bubble"></span>
+                    <span class="small-bubble"></span>
                                         <img src="./images/product-3.png" />
                 </div>
                 <div class="product-info">
@@ -152,8 +156,8 @@
             </div>          
             <div class="product">
                 <div class="product-img">
-                    <span class="big-bulb"></span>
-                    <span class="small-bulb"></span>
+                    <span class="big-bubble"></span>
+                    <span class="small-bubble"></span>
                                         <img src="./images/product-4.png" />
                 </div>
                 <div class="product-info">
@@ -207,31 +211,60 @@
     </section>
     <section class="testimonials">
         <h3>Testimonials </h3>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <i class='bx bxs-quote-left'></i>
-                <p>I am so grateful for this water delivery to our home! We’ve got our energy back after just a short time and we feel vibrant again! I especially like sparkling water.
-                </p>
-                <div class="user">
-                   <img src="./images/testimonials-person-1.jpg" />
-                   <div class="user-info">
-                    <span class="user-name">Harold Barnett</span>
-                    <span class="user-type">Regular Client</span>
-                   </div>
+    
+      
+            <div class="testimonial-container">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <i class='bx bxs-quote-left'></i>
+                            <p>I am so grateful for this water delivery to our home! We’ve got our energy back after just a short time and we feel vibrant again! I especially like sparkling water.
+                            </p>
+                            <div class="user">
+                               <img src="./images/testimonials-person-1.jpg" />
+                               <div class="user-info">
+                                <span class="user-name">Harold Barnett</span>
+                                <span class="user-type">Regular Client</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <i class='bx bxs-quote-left'></i>
+            <p>I have looked far and wide in Los Angeles County for the purest water, and Aqua is without a doubt the cleanest, freshest, most vital water available and it is also affordable.
+                            </p>
+                            <div class="user">
+                               <img src="./images/testimonials-person-2.jpg" />
+                               <div class="user-info">
+                                  <span class="user-name">Harold Barnett</span>
+                                  <span class="user-type">Regular Client</span>
+                               </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <i class='bx bxs-quote-left'></i>
+            <p>I have looked far and wide in Los Angeles County for the purest water, and Aqua is without a doubt the cleanest, freshest, most vital water available and it is also affordable.
+                            </p>
+                            <div class="user">
+                               <img src="./images/testimonials-person-2.jpg" />
+                               <div class="user-info">
+                                  <span class="user-name">Harold Barnett</span>
+                                  <span class="user-type">Regular Client</span>
+                               </div>
+                            </div>
+                        </div>  
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
                 </div>
-            </div>
-            <div class="testimonial">
-                <i class='bx bxs-quote-left'></i>
-<p>I have looked far and wide in Los Angeles County for the purest water, and Aqua is without a doubt the cleanest, freshest, most vital water available and it is also affordable.
-                </p>
-                <div class="user">
-                   <img src="./images/testimonials-person-2.jpg" />
-                   <div class="user-info">
-                      <span class="user-name">Harold Barnett</span>
-                      <span class="user-type">Regular Client</span>
-                   </div>
-                </div>
-            </div>        </div>
+              </div>
     </section>
     <section class="contact">
      <div class="contact-from">
@@ -297,4 +330,6 @@
     </section>
  </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
 </html>

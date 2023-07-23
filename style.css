@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: 0;
   font-family: "Poppins";
+  scroll-behavior: smooth;
 }
 :root {
   --text-color: #313131;
@@ -81,11 +82,18 @@ nav ul li {
 }
 nav ul li a {
   font-weight: 400;
+  text-decoration: none;
 }
 nav ul li a:hover {
   color: var(--main-color);
   cursor: pointer;
   transition: var(--transition);
+}
+nav ul li a:active {
+  color: var(--main-color);
+}
+nav ul li a:visited {
+  color: var(--other-color);
 }
 .call-btn {
   color: var(--second-color);

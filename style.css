@@ -337,7 +337,6 @@ button:hover {
 .product-img img {
   top: 0%;
   left: 50%;
-
   margin: auto;
 }
 .product-img span.big-bubble {
@@ -358,7 +357,41 @@ button:hover {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: fuchsia;
+  background-color: var(--bg-color);
+  position: absolute;
+
+  animation: bubble 2s ease-in-out 0s infinite;
+}
+@keyframes bubble {
+  0% {
+    /* pushes the sun down past the viewport */
+    left: 10rem;
+    top: 3rem;
+    opacity: 1;
+  }
+  25% {
+    /* returns the sun to its default position */
+    left: 9rem;
+    top: 2rem;
+    opacity: 0.8;
+  }
+  50% {
+    /* returns the sun to its default position */
+    left: 10rem;
+    top: 1rem;
+    opacity: 0.5;
+  }
+  75% {
+    /* returns the sun to its default position */
+    left: 9rem;
+    top: -2rem;
+    opacity: 0;
+  }
+  100% {
+    /* returns the sun to its default position */
+    left: 10rem;
+    top: 3rem;
+  }
 }
 
 .product-info {

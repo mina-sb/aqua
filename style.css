@@ -29,7 +29,7 @@ h2 {
   margin-block-start: 0em;
 }
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: 0.1rem;
   font-weight: 200;
   margin-block-start: 0em;
@@ -321,6 +321,7 @@ button:hover {
 .product {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .product-img {
@@ -511,7 +512,7 @@ button:hover {
   flex-direction: column;
 }
 .contact-from {
-  padding: 6rem 4rem;
+  padding: 6rem 2rem;
   box-sizing: border-box;
 }
 .inputs {
@@ -684,6 +685,7 @@ label {
   object-fit: cover;
   object-position: right;
   z-index: 0;
+  filter: brightness(50%);
 }
 .my-slider {
   z-index: 0;
@@ -830,6 +832,7 @@ svg {
   .product {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1rem;
   }
   .swiper-button-prev,
   .swiper-button-next {

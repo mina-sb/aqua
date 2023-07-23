@@ -16,7 +16,7 @@
 <body>
  <header>
     <div class="logo-container">
-        <span class="menu-btn"><i class='bx bx-menu' ></i></span>
+        <span class="menu-btn" onclick="menu()"><i class='bx bx-menu' ></i></span>
         <img src="./images/logo.png" />
     </div>
     <nav>
@@ -30,7 +30,17 @@
         <li><a href="#contact">CONTACT US</a></li>              
      </ul>
     </nav>
-
+    <div class="side-menu close" id="side-menu">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#testimonial">TESTIMONIALS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>              
+         </ul>
+    </div>
     <span class="call-btn"><i class='bx bxs-phone-call' ></i></span>
  </header>
  <main  id="home">
@@ -362,6 +372,22 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
+<script>
+    
+   function menu(){
+    const menu = document.getElementById('side-menu')
+   
+    if(menu.classList.contains("close")){
+        menu.classList.remove("close");
+        menu.classList.add("open");
+    }
+    else{
+        menu.classList.remove("open");
+        menu.classList.add("close");
+    }
+  
 
+   }
+</script>
 
 </html>

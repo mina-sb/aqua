@@ -11,33 +11,51 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-  
+  <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+     .mySwiper .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+
+      .swiper-slide  {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-slide img {max-width: 100%;
+  min-height: 30rem;
+  object-fit: cover;
+  object-position: right;}
+
+
+  svg{
+    fill: #fff;
+    width: 100%;
+    height: 45px;
+}
+  }
+}
+    </style>
 </head>
 <body>
- <header>
-    <div class="logo-container">
-        <span class="menu-btn"><i class='bx bx-menu' ></i></span>
-        <img src="./images/logo.png" />
-    </div>
-    <nav>
-     <ul>
-        <li><a>HOME</a></li>
-        <li><a>ABOUT</a></li>
-        <li><a>FEATURES</a></li>
-        <li><a>PRODUCTS</a></li>
-        <li><a>SERVICES</a></li>
-        <li><a>TESTIMONIALS</a></li>
-        <li><a>CONTACT US</a></li>              
-     </ul>
-    </nav>
-
-    <span class="call-btn"><i class='bx bxs-phone-call' ></i></span>
- </header>
+ 
+    <svg x="0px" y="0px" viewBox="0 0 1920 45" width="1920" height="45px" preserveAspectRatio="none">
+        <style type="text/css"></style>
+        <path d="M1920,0c-82.8,0-108.8,44.4-192,44.4c-78.8,0-116.5-43.7-192-43.7c-77.1,0-115.9,44.4-192,44.4c-78.2,0-114.6-44.4-192-44.4c-78.4,0-115.3,44.4-192,44.4C883.1,45,841,0.6,768,0.6C691,0.6,652.8,45,576,45C502.4,45,461.9,0.6,385,0.6C306.5,0.6,267.9,45,191,45C115.1,45,78,0.6,0,0.6V45h1920V0z"></path>
+      </svg>
  <main>
-    <div class="my-slider">
+    <div class="my-slider box">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/bg.jpg" class="bg-img" />
+            <div class="swiper-slide"><img src="./images/bg.jpg" />
             
                 <div class="slide-info">
                     <span>WELCOME TO AQUA </span>
@@ -48,7 +66,7 @@
                    
                 </div>
             </div>
-            <div class="swiper-slide"><img src="./images/bg.jpg" class="bg-img" />
+            <div class="swiper-slide"><img src="./images/bg.jpg" />
                 <div class="slide-info">
                     <span>WELCOME TO AQUA </span>
                     <h1>SPRING WATER</h1>
@@ -63,14 +81,13 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
-      <div class="sectionWave">
-        <svg x="0px" y="0px" viewBox="0 0 1920 45" width="1920" height="45px" preserveAspectRatio="none">
-            <style type="text/css"></style>
-            <path d="M1920,0c-82.8,0-108.8,44.4-192,44.4c-78.8,0-116.5-43.7-192-43.7c-77.1,0-115.9,44.4-192,44.4c-78.2,0-114.6-44.4-192-44.4c-78.4,0-115.3,44.4-192,44.4C883.1,45,841,0.6,768,0.6C691,0.6,652.8,45,576,45C502.4,45,461.9,0.6,385,0.6C306.5,0.6,267.9,45,191,45C115.1,45,78,0.6,0,0.6V45h1920V0z"></path>
-          </svg>
-      </div>
-          
-    <section class="description">
+
+
+
+
+    
+    
+    <section class="description ">
         <div class="flex-conatiner">
             <div class="col-7">
              <img src="./images/index-01.png"  />

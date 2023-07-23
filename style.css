@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: 27.5rem !important;
+  top: 35rem !important;
   left: 2rem !important;
   transition: all 0.5s;
 }
@@ -160,13 +160,13 @@ button {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  padding: 1rem 4rem;
+  padding: 0.5rem 2rem;
   outline: none;
-  font-weight: 600;
+  font-weight: 400;
   transition: var(--transition);
   margin: 6px 0;
   letter-spacing: 0.1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 button:hover {
   background-color: #4382ff;
@@ -656,6 +656,101 @@ label {
   border-bottom-right-radius: 0;
 }
 
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.swiper-slide  {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide .bg-img {
+  max-width: 100%;
+min-height: 39rem;
+object-fit: cover;
+object-position: right;
+z-index: 0;
+}
+.my-slider{
+z-index: 0;
+}
+svg{
+fill: #fff;
+width: 100%;
+height: 20px;
+
+}
+.sectionWave{
+position: absolute;
+top: 10;
+transform: translateY(-100%);
+width: 100%;
+line-height: 0;
+will-change: transform;
+z-index: 1;
+box-sizing: border-box;
+padding: 0;
+overflow: hidden;
+}
+
+
+
+@media (min-width: 290px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 27rem !important;
+    left: 2rem !important;
+    transition: all 0.5s;
+  }
+  .swiper-button-next {
+    left: 6rem !important;
+  }
+  .swiper-slide .bg-img {
+    max-width: 100%;
+    min-height: 35rem;
+}
+}
+@media (min-width: 380px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 25rem !important;
+    left: 2rem !important;
+    transition: all 0.5s;
+  }
+  .swiper-button-next {
+    left: 6rem !important;
+  }
+}
+@media (min-width: 400px) {
+  .swiper-slide .bg-img {
+      max-width: 100%;
+min-height: 30rem;
+}
+}
+
+@media (min-width: 540px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 23rem !important;
+    left: 2rem !important;
+    transition: all 0.5s;
+  }
+  .swiper-button-next {
+    left: 6rem !important;
+  }
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: 2em;
@@ -730,7 +825,7 @@ label {
   }
   .swiper-button-prev,
   .swiper-button-next {
-    top: 25rem !important;
+    top: 22rem !important;
     left: 2rem !important;
     transition: all 0.5s;
   }
@@ -745,7 +840,7 @@ label {
   }
   .swiper-button-prev,
   .swiper-button-next {
-    top: 28rem !important;
+    top: 26rem !important;
     left: 3rem !important;
   }
   .swiper-button-next {
@@ -806,20 +901,31 @@ label {
   .card {
     padding: 0rem 10rem 3rem 10rem;
   }
+
+  button {
+    padding: 1rem 4rem;
+    font-weight: 600;
+    margin: 6px 0;
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 900px) {
+  svg{
+    height: 45px;
 }
 
 @media (min-width: 1050px) {
   .slide-info {
-    top: 7rem;
-    left: 7rem;
+    top: 5rem;
+    left: 5rem;
   }
   .swiper-button-prev,
   .swiper-button-next {
-    top: 34rem !important;
-    left: 7rem !important;
+    top: 32rem !important;
+    left: 5rem !important;
   }
   .swiper-button-next {
-    left: 10rem !important;
+    left: 7rem !important;
   }
 
   .menu-btn {
@@ -905,6 +1011,18 @@ label {
     margin-left: 3rem;
     margin-top: 5rem;
     width: 65%;
+  }
+  .slide-info {
+    top: 7rem;
+    left: 7rem;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 34rem !important;
+    left: 7rem !important;
+  }
+  .swiper-button-next {
+    left: 10rem !important;
   }
 }
 

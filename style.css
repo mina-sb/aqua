@@ -365,41 +365,9 @@ button:hover {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: var(--bg-color);
+  background-color: rgb(216, 223, 252);
   position: absolute;
-
-  animation: bubble 2s ease-in-out 0s infinite;
-}
-@keyframes bubble {
-  0% {
-    /* pushes the sun down past the viewport */
-    left: 10rem;
-    top: 3rem;
-    opacity: 1;
-  }
-  25% {
-    /* returns the sun to its default position */
-    left: 9rem;
-    top: 2rem;
-    opacity: 0.8;
-  }
-  50% {
-    /* returns the sun to its default position */
-    left: 10rem;
-    top: 1rem;
-    opacity: 0.5;
-  }
-  75% {
-    /* returns the sun to its default position */
-    left: 9rem;
-    top: -2rem;
-    opacity: 0;
-  }
-  100% {
-    /* returns the sun to its default position */
-    left: 10rem;
-    top: 3rem;
-  }
+  animation: 3s ease-out infinite normal bubble;
 }
 
 .product-info {
@@ -788,7 +756,36 @@ svg {
 .side-menu ul li a:hover {
   color: var(--main-color);
 }
-
+@keyframes bubble {
+  0% {
+    /* pushes the sun down past the viewport */
+    left: 13rem;
+    top: 2.5rem;
+  }
+  25% {
+    /* returns the sun to its default position */
+    left: 14rem;
+    top: 1.75rem;
+  }
+  50% {
+    /* returns the sun to its default position */
+    left: 12rem;
+    top: 0.75rem;
+    opacity: 0.5;
+  }
+  75% {
+    /* returns the sun to its default position */
+    left: 14rem;
+    top: 0rem;
+    opacity: 0.2;
+  }
+  100% {
+    /* returns the sun to its default position */
+    left: 13rem;
+    top: -2rem;
+    opacity: 0;
+  }
+}
 @media (min-width: 290px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -802,6 +799,36 @@ svg {
   .swiper-slide .bg-img {
     max-width: 100%;
     min-height: 35rem;
+  }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 12rem;
+      top: 2.5rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 13rem;
+      top: 1.75rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 12rem;
+      top: 0.75rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 14rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 13rem;
+      top: -2rem;
+      opacity: 0;
+    }
   }
 }
 @media (min-width: 380px) {
@@ -820,6 +847,36 @@ svg {
     max-width: 100%;
     min-height: 30rem;
   }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 16rem;
+      top: 2.5rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 15rem;
+      top: 1.75rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 16rem;
+      top: 0.75rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 14rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 16rem;
+      top: -1rem;
+      opacity: 0;
+    }
+  }
 }
 
 @media (min-width: 540px) {
@@ -831,6 +888,36 @@ svg {
   }
   .swiper-button-next {
     left: 6rem !important;
+  }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 17rem;
+      top: 2.5rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 18rem;
+      top: 1.75rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 17rem;
+      top: 0.75rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 18rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 16rem;
+      top: -1rem;
+      opacity: 0;
+    }
   }
 }
 
@@ -916,6 +1003,36 @@ svg {
   .swiper-button-next {
     left: 6rem !important;
   }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 12rem;
+      top: 3rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 11rem;
+      top: 2rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 12rem;
+      top: 1rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 10rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 12rem;
+      top: 3rem;
+      opacity: 0;
+    }
+  }
 }
 @media (min-width: 800px) {
   .slide-info {
@@ -992,6 +1109,36 @@ svg {
     margin: 6px 0;
     margin-top: 1.5rem;
   }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 6rem;
+      top: 3rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 5rem;
+      top: 2rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 7rem;
+      top: 1rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 6rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 8rem;
+      top: 3rem;
+      opacity: 0;
+    }
+  }
 }
 @media (min-width: 900px) {
   svg {
@@ -999,6 +1146,36 @@ svg {
   }
   .contact-from {
     padding: 6rem 10rem;
+  }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 7rem;
+      top: 3rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 6rem;
+      top: 2rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 7rem;
+      top: 1rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 5rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 7rem;
+      top: 3rem;
+      opacity: 0;
+    }
   }
 }
 
@@ -1060,6 +1237,36 @@ svg {
   .service {
     flex: 0 0 33%;
   }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 8rem;
+      top: 3rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 7rem;
+      top: 2rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 8rem;
+      top: 1rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 6rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 8rem;
+      top: 3rem;
+      opacity: 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1111,6 +1318,36 @@ svg {
   }
   .swiper-button-next {
     left: 10rem !important;
+  }
+  @keyframes bubble {
+    0% {
+      /* pushes the sun down past the viewport */
+      left: 10rem;
+      top: 3rem;
+    }
+    25% {
+      /* returns the sun to its default position */
+      left: 9rem;
+      top: 2rem;
+    }
+    50% {
+      /* returns the sun to its default position */
+      left: 10rem;
+      top: 1rem;
+      opacity: 0.5;
+    }
+    75% {
+      /* returns the sun to its default position */
+      left: 9rem;
+      top: 0rem;
+      opacity: 0.2;
+    }
+    100% {
+      /* returns the sun to its default position */
+      left: 10rem;
+      top: 3rem;
+      opacity: 0;
+    }
   }
 }
 

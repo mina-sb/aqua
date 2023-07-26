@@ -176,7 +176,6 @@
                     <div class="product-img">
                         <span class="big-bubble"></span>
                         <span class="small-bubble"></span>
-
                         <img src="./images/product-1.png" />
                     </div>
                     <div class="product-info">
@@ -191,7 +190,7 @@
                     <div class="product-img">
                         <span class="big-bubble"></span>
                         <span class="small-bubble"></span>
-
+    
                         <img src="./images/product-1.png" />
                     </div>
                     <div class="product-info">
@@ -339,8 +338,6 @@
      </div>
         <img src="./images/contact.png"  />
     </section>
-   
-  
     <section class="footer">
         <div class="sectionWave footer-wave">
             <svg x="0px" y="0px" viewBox="0 0 1920 45" width="1920" height="45px" preserveAspectRatio="none">
@@ -375,24 +372,15 @@
     </section>
  
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 <script src="main.js"></script>
+
+
 <script>
+    ScrollReveal().reveal("body > section", {  distance: '101%', duration: 1200,
+    origin: 'top' , delay : 500});
     
-   function menu(){
-    const menu = document.getElementById('side-menu')
-   
-    if(menu.classList.contains("close")){
-        menu.classList.remove("close");
-        menu.classList.add("open");
-    }
-    else{
-        menu.classList.remove("open");
-        menu.classList.add("close");
-    }
-  
-
-   }
 </script>
-
 </html>

@@ -22,3 +22,15 @@ var Myswiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+function menu() {
+  const menu = document.getElementById("side-menu");
+
+  if (menu.classList.contains("close")) {
+    menu.classList.remove("close");
+    menu.classList.add("open");
+  } else {
+    menu.classList.remove("open");
+    menu.classList.add("close");
+  }
+}
